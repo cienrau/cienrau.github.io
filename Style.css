@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#050b17;
+    color:white;
+}
+
+/* NAVBAR */
+
+nav{
+    position:fixed;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,.8);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    font-family:'Orbitron',sans-serif;
+    color:#4dc5ff;
+    font-size:1.5rem;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav li{
+    margin-left:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:
+    radial-gradient(circle at top,#122a54,#050b17);
+}
+
+.hero h1{
+    font-size:5rem;
+    font-family:'Orbitron',sans-serif;
+}
+
+.hero h2{
+    color:#4dc5ff;
+    margin-top:15px;
+}
+
+.hero p{
+    margin-top:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 30px;
+
+    background:#4dc5ff;
+    color:black;
+
+    text-decoration:none;
+    font-weight:600;
+
+    border-radius:8px;
+}
+
+/* SECTIONS */
+
+section{
+    padding:100px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+/* PROJECTS */
+
+.project-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+}
+
+.project-card{
+
+    padding:30px;
+
+    background:#0c1529;
+
+    border:1px solid #1b345f;
+
+    border-radius:15px;
+
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.project-card h3{
+    color:#4dc5ff;
+    margin-bottom:15px;
+}
+
+/* SKILLS */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skills span{
+
+    background:#4dc5ff;
+    color:black;
+
+    padding:10px 18px;
+
+    border-radius:25px;
+
+    font-weight:600;
+}
+
+/* CONTACT */
+
+#contact{
+    text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    background:black;
+}
