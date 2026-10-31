@@ -1,11 +1,16 @@
-window.addEventListener("scroll", () => {
-
+document.addEventListener("DOMContentLoaded", () => {
     const nav = document.querySelector("nav");
+    const year = document.getElementById("year");
 
-    if(window.scrollY > 50){
-        nav.style.background = "rgba(0,0,0,0.95)";
-    } else {
-        nav.style.background = "rgba(0,0,0,0.8)";
+    if (year) {
+        year.textContent = new Date().getFullYear();
     }
 
+    const updateNav = () => {
+        if (!nav) return;
+        nav.classList.toggle("scrolled", window.scrollY > 24);
+    };
+
+    updateNav();
+    window.addEventListener("scroll", updateNav, { passive: true });
 });
