@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucien Schmoldt | Aerospace Portfolio</title>
+    <meta name="description" content="Aerospace engineering portfolio focused on aerodynamics, systems design, and technical analysis.">
+
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <a class="brand-block" href="#top" aria-label="Lucien Schmoldt, home">
+                <img class="brand-mark" src="Designer.png" alt="Skyshield aerospace project emblem">
+                <span class="brand-copy">
+                    <span class="brand-name">Lucien Schmoldt</span>
+                    <span class="brand-role">Aerospace engineering</span>
+                </span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#third-party-work">External work</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main id="top" class="content-wrap">
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="kicker"><span class="live-dot"></span> Aerospace engineering portfolio</p>
+                    <h1>Lucien<br><span>Schmoldt</span></h1>
+                    <p class="hero-role">Embry-Riddle Aeronautical University / Aerospace Engineering</p>
+                    <p class="hero-text">
+                        Aerospace engineering student and XJEP participant, interested in aircraft design,
+                        aerodynamics, and hands-on flight systems.
+                    </p>
+                    <a href="#projects" class="hero-link">Explore selected projects <span aria-hidden="true">↓</span></a>
+                </div>
+
+                <figure class="technical-figure">
+                    <div class="figure-heading">
+                        <span>DESIGN STUDY / 01</span>
+                        <span>PLANFORM</span>
+                    </div>
+                    <svg class="wing-drawing" viewBox="0 0 520 360" role="img" aria-labelledby="wing-title wing-description">
+                        <title id="wing-title">Conceptual wing planform drawing</title>
+                        <desc id="wing-description">A non-dimensional line drawing of a swept aircraft wing with construction lines and centerline.</desc>
+                        <defs>
+                            <pattern id="drawing-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+                                <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#aaa6b1" stroke-opacity=".12" stroke-width="1"/>
+                            </pattern>
+                        </defs>
+                        <rect width="520" height="360" fill="url(#drawing-grid)"/>
+                        <g class="drawing-lines" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path class="wing-outline" d="M86 274 L223 77 L260 58 L297 77 L434 274 L387 263 L286 198 L260 188 L234 198 L133 263 Z"/>
+                            <path d="M260 58 L260 308" stroke-dasharray="5 7"/>
+                            <path d="M86 292 L434 292" stroke-dasharray="2 7"/>
+                            <path d="M122 273 L222 97 M398 273 L298 97" stroke-dasharray="3 7"/>
+                            <path d="M100 318 L420 318"/>
+                            <path d="M100 311 L100 325 M420 311 L420 325"/>
+                            <path d="M100 318 L114 313 M100 318 L114 323 M420 318 L406 313 M420 318 L406 323"/>
+                        </g>
+                        <text x="260" y="344" text-anchor="middle">CONCEPTUAL GEOMETRY · NOT TO SCALE</text>
+                        <text x="273" y="73">C/L</text>
+                        <text x="260" y="306" text-anchor="middle">REFERENCE AXIS</text>
+                    </svg>
+                    <figcaption>
+                        <span>01 — Geometry</span>
+                        <span>Illustrative study</span>
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="about" class="section">
+                <div class="section-heading">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">Profile</h2>
+                </div>
+                <div class="about-copy">
+                    <p>
+                        I study aerospace engineering at Embry-Riddle Aeronautical University and participate in
+                        XJEP. I am interested in aircraft design, flight mechanics, aerodynamics, and computational
+                        analysis, especially how design decisions affect performance and feasibility.
+                    </p>
+                    <p>
+                        Alongside my coursework, I am developing an independent drone project. I will share more as
+                        the design takes shape.
+                    </p>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <div class="section-heading">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Selected projects</h2>
+                </div>
+                <div class="project-list">
+                    <article class="project-item">
+                        <span class="project-index">01</span>
+                        <div class="project-body">
+                            <span class="project-type">Independent project / UAV</span>
+                            <h3>Project name: <span class="name-placeholder">TBD</span></h3>
+                            <p>
+                                An independent drone project currently in development. Project name and further
+                                details will be added as the design takes shape.
+                            </p>
+                            <p class="project-status">In progress · Name to be announced</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="third-party-work" class="section">
+                <div class="section-heading">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">Third-party work</h2>
+                </div>
+                <div class="project-list">
+                    <article class="project-item">
+                        <span class="project-index">01</span>
+                        <div class="project-body">
+                            <span class="project-type">XJEP / Team project</span>
+                            <h3>NDA-covered engineering project</h3>
+                            <p>
+                                Modeling parts for an engineering project in Autodesk Fusion. Further project
+                                information is withheld under a non-disclosure agreement.
+                            </p>
+                            <p class="project-status">In progress · Details withheld</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="skills" class="section">
+                <div class="section-heading">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">Tools & skills</h2>
+                </div>
+                <div class="skills-list">
+                    <span>CATIA</span>
+                    <span>SolidWorks</span>
+                    <span>ANSYS</span>
+                    <span>MATLAB</span>
+                    <span>Python</span>
+                    <span>CFD</span>
+                    <span>Finite Element Analysis</span>
+                    <span>Aerodynamics</span>
+                    <span>Flight Dynamics</span>
+                    <span>Systems Design</span>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="section-heading">
+                    <span class="section-number">05</span>
+                    <h2 class="section-title">Contact</h2>
+                </div>
+                <p class="contact-copy">For research, internships, or engineering opportunities.</p>
+                <div class="contact-links">
+                    <a href="mailto:lucien.schmoldt@email.com">lucien.schmoldt@email.com</a>
+                    <a href="https://www.linkedin.com/in/lucienschmoldt" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="https://github.com/lucienschmoldt" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© <span id="year"></span> Lucien Schmoldt</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
